@@ -1,0 +1,16 @@
+{
+  "name": "open-data",
+  "version": "1.0.0",
+  "description": "**open-data** is an initiative that intends to bring information closer to the chilean community.",
+  "keywords": [],
+  "license": "ISC",
+  "author": "Tres Ases",
+  "scripts": {
+    "build": "pnpm recursive run build",
+    "clean": "pnpm recursive exec -- rm -rf node_modules; rm shrinkwrap.yaml; rm -rf node_modules",
+    "server:start": "pnpm recursive run start --filter @beaver/server",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "front:build": "pnpm build --filter @open-data/frontend",
+    "front:start": "pnpm start --filter @open-data/frontend"
+  }
+}
